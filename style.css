@@ -4,12 +4,51 @@ header, main {
     background-color: #fafafa;
 } 
 
+header {
+    text-align: center;
+}
+
 body {
     background-color: black;
+}
 
+.btn-add {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 table {
+    border-top: 1px black solid;
     height: 100%;
     width: 100%;
+}
+
+.container-list {
+    padding-top: 10px;
+}
+
+main {
+    padding: 5px;
+}
+
+.container-search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    height: 30px;
+}
+
+tr:nth-child(even) {
+    background-color: red;
+}
+
+.container-crud {
+    display: none;
+    
 }
