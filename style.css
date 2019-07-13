@@ -9,10 +9,10 @@ header {
 }
 
 body {
-    background-color: black;
+    background-color: #CAC9C9;
 }
 
-.btn-add {
+.container-btn-add-ui {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -45,10 +45,15 @@ input {
 }
 
 tr:nth-child(even) {
-    background-color: red;
+    background-color: #ACA0A0;
 }
 
-.container-crud {
+.group-input {
+    display: table-cell;
+    padding-right: 10px;
+}
+
+.hide {
     display: none;
     
 }

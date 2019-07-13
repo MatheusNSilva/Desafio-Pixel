@@ -13,17 +13,17 @@
     </header>    
     <main>
         <div class="container-search">
-            <input type="search" placeholder="Pesquise o nome do anime">
-            <button class="btn-search">Pesquisar</button>
+            <input type="search" id="search" placeholder="Pesquise o nome do anime">
+            <button id="btn-search">Pesquisar</button>
         </div>
-        <div class="btn-add">
-             <button class="btn-add" id="btn-add">Cadastrar</button>
+        <div class="container-btn-add-ui">
+             <button class="btn-add" id="btn-add-ui">Novo Anime</button>
         </div>
         <div class="container-list">
             <table>
                 <thead>
                     <tr>
-                        <th>Nome</th>
+                        <th>Título</th>
                         <th>Genêro</th>
                         <th>Número de Episódios</th>
                         <th>Descrição</th>
@@ -31,48 +31,38 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>One Piece</td>
-                        <td>Shonem</td>
-                        <td>890</td>
-                        <td>Muito bom</td>
-                        <td>Lançando</td>
-                    </tr>
-                    <tr>
-                        <td>One Piece</td>
-                        <td>Shonem</td>
-                        <td>890</td>
-                        <td>Muito bom</td>
-                        <td>Lançando</td>
-                     </tr>
+                    <tr></tr>
                 </tbody>
             </table>
         </div>
-        <div class="container-crud">
-            <div class="group-input">
-                <label for="number">Número de Episódios</label> 
-                <input type="text" id="title">
-            </div>
+        <div class="container-crud hide">
             <div class="group-input">
                 <label for="title">Título</label> 
                 <input type="text" id="title">
             </div>
             <div class="group-input">
+                <label for="number">Número de Episódios</label> 
+                <input type="text" id="number">
+            </div>
+            <div class="group-input">
                 <label for="gender">Genêro</label>
-                <select>
+                <select id="gender">
                     <option>Selecione</option>
-                    <option>Shonem</option>
+                    <option>Shonen</option>
                     <option>Shoujo</option>
                 </select>
-            </div>
-            <div class="group-input">    
-                <label for="number">Número de Episódios</label> 
-                <input type="text" id="namber"> 
             </div>
             <div class="group-input">
                 <label for="status">Status</label> 
                 <input type="text" id="status">
+            </div>
+            <div class="group-input">
+                <label for="description">Descrição</label> 
+                <textarea id="description"></textarea>
             </div>    
+            <div class="group-input">
+                <button class="btn" id="btn-add-anime">Salvar</button>
+            </div>
         </div>
     </main>    
     <script src="./js/app.js"></script>
