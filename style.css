@@ -1,0 +1,15 @@
+header, main {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #fafafa;
+} 
+
+body {
+    background-color: black;
+
+}
+
+table {
+    height: 100%;
+    width: 100%;
+}
